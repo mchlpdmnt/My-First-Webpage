@@ -78,7 +78,15 @@ h1 {
 /* Smartphones */
 
 @media screen and (max-height: 2400px) and (max-width: 1080px) {
-  
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(-300px); }
+}
+@keyframes moveUp {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-250px); }
+}
+
 h1 { 
 
 font-size: 1.5em; 
