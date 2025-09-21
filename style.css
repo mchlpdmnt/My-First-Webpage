@@ -13,6 +13,7 @@ h1 {
   font-size: 3em;
   color: black;
   margin-top: 300px;
+  margin-bottom: 0px;
   cursor: pointer;
   display: block;
   animation: fadeUp 1.5s ease-out forwards;
@@ -36,7 +37,6 @@ h1 {
 
 .container {
   margin: 0 auto;
-  margin-top: 50px;
   max-width: 800px;
   padding: 0 1rem;
   font-family: 'Courier Prime';
@@ -81,8 +81,16 @@ h1 {
   .navbar { gap: 1rem; }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480dpi) {
   h1 { font-size: 1.5em; margin-top: 300px; }
   .container { font-size: 1em; }
   .navbar { font-size: 1em; gap: 2rem; text-decoration: underline; }
 }
+
+@media (min-width:320dpi)  {
+  
+  h1 { font-size: 1.5em; margin-top: 300px; }
+  .container { font-size: 1em; }
+  .navbar { font-size: 0.75em; gap: 2rem; text-decoration: underline; }
+
+ }
