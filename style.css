@@ -87,7 +87,7 @@ h1 {
   .navbar { font-size: 1em; gap: 2rem; text-decoration: underline; }
 }
 
-@media (min-width:320dpi)  {
+@media screen and (min-width:320dpi) and (max-height: 2400px) and (max-width: 1080px) {
   
   h1 { font-size: 1.5em; margin-top: 300px; }
   .container { font-size: 1em; }
