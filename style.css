@@ -74,23 +74,29 @@ h1 {
 
 }
 
-/* responsive tweaks */
-@media (max-width: 768px) {
-  h1 { font-size: 2em; }
-  .container { font-size: 1.25em; }
-  .navbar { gap: 1rem; }
-}
 
-@media (max-width: 480dpi) {
-  h1 { font-size: 1.5em; margin-top: 300px; }
-  .container { font-size: 1em; }
-  .navbar { font-size: 1em; gap: 2rem; text-decoration: underline; }
-}
+/* Smartphones */
 
 @media screen and (max-height: 2400px) and (max-width: 1080px) {
   
-  h1 { font-size: 1.5em; margin-top: 300px; }
-  .container { font-size: 1em; }
-  .navbar { font-size: 0.75em; gap: 2rem; text-decoration: underline; }
+h1 { 
 
- }
+font-size: 1.5em; 
+margin-top: 300px; 
+
+}
+
+.container { 
+
+font-size: 1em; 
+
+}
+
+.navbar { 
+
+font-size: 0.75em; 
+gap: 2rem; 
+text-decoration: underline; 
+
+}
+}
