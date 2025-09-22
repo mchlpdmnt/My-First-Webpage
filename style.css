@@ -5,7 +5,7 @@ body {
   flex-direction: column;
   justify-content: center; /* centers vertically */
   align-items: center;     /* centers horizontally */
-  position: relative;
+  position: fixed;
 }
 
 body::before {
