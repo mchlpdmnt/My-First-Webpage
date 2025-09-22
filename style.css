@@ -3,8 +3,8 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* centers vertically */
-  align-items: center;     /* centers horizontally */
+  justify-content: center; 
+  align-items: center;    
   position: fixed;
 }
 
@@ -27,6 +27,17 @@ h1 {
   font-size: 3em;
   cursor: pointer;
   animation: fadeUp 1.5s ease-out forwards;
+  text-decoration: underline;
+}
+
+h1:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+h1,.move-up:hover {
+  text-decoration: none;  
+  cursor: default;        
 }
 
 
@@ -44,6 +55,7 @@ h1 {
 
 .move-up {
   animation: moveUp 1s ease forwards;
+  cursor: default;
 }
 
 .container {
@@ -89,12 +101,20 @@ h1 {
 
 @media screen and (max-width:480px) {
   
-h1 { 
-  
-    font-size: 1.5em; 
-    margin-top: 5vh; 
+h1 {
 
-}
+    font-size: 1.5em; 
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-top: 5vh;
+    animation: pulse 1.5s infinite;
+  }
+  @keyframes pulse {
+    0%   { transform: translate(-50%, -50%) scale(1); }
+    50%  { transform: translate(-50%, -50%) scale(1.05); }
+    100% { transform: translate(-50%, -50%) scale(1); }
+  }
   
 .container { 
   
@@ -112,12 +132,16 @@ h1 {
 
   @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(0px); }
-  to   { opacity: 1; transform: translateY(-20vh); }
+  to   { opacity: 1; transform: translateY(-25vh); }
 }
 
 @keyframes moveUp {
-  from { transform: translateY(0); }
-  to   { transform: translateY(-25vh); }
+  from {
+    transform: translate(-50%, -50%);
+  }
+  to {
+    transform: translate(-50%, -800%);
+  }
 }
 
  }
